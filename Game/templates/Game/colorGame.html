@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Game</title>
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'Game/css/colorGame.css' %}" type="text/css" media="all" />
+</head>
+<body>
+<h1>
+	The Great 
+	<br>
+	<span id="colorDisplay">RGB</span> 
+	<br>
+	Color Game
+</h1>
+
+<div id="stripe">
+	<button id="reset">New Colors</button>
+	<span id="message"></span>
+	<button class="mode">Easy</button>
+	<button class="mode selected">Hard</button>
+	<!-- <button class="btn btn-success" href="{% url 'home' %}">HomePage</button> -->
+</div>
+
+	<div id="container">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+
+<script type="text/javascript" src="{% static 'Game/js/colorGame.js' %}"></script>
+</body>
+</html>
